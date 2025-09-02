@@ -1,0 +1,23 @@
+[project]
+name = "ml-proyecto-weatheraus"
+version = "0.1.0"
+description = "Proyecto ML para predicción de lluvia en Australia"
+authors = [ { name = "Autor", email = "email@example.com" } ]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "plotly",
+    "xgboost",
+    "lightgbm",
+    "category_encoders",
+    "shap",
+    "imbalanced-learn"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

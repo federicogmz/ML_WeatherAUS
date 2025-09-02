@@ -1,0 +1,55 @@
+{
+  "final_export_timestamp": "2025-09-02T18:13:55.384879Z",
+  "final_valid_auc": 0.8884720234677284,
+  "final_gap": 0.03285113885911739,
+  "final_test_metrics": {
+    "roc_auc": 0.8906053512775669,
+    "pr_auc": 0.7468027571786142,
+    "f1": 0.623801991253373,
+    "recall": 0.5258039215686274,
+    "precision": 0.7666971637694419,
+    "bal_acc": 0.7397873850047634
+  },
+  "refit_on_train_valid": true,
+  "export_run_id": "20250902T181355Z",
+  "model_trace": [
+    {
+      "stage": "baseline",
+      "model": "logit_plain",
+      "valid_auc": 0.8742234811355198,
+      "gap": 0.026035599956912958
+    },
+    {
+      "stage": "stage2_ensemble",
+      "model": "xgb_candidate",
+      "valid_auc": 0.8884720234677284,
+      "gap": 0.03285113885911739,
+      "improvement": 0.014248542332208514
+    },
+    {
+      "stage": "deep_nn_eval",
+      "model": "DeepDenseNet",
+      "valid_auc": 0.8951409365353107,
+      "gap": 0.05749306398887433,
+      "improvement": 0.006668913067582327,
+      "adopted": false
+    },
+    {
+      "stage": "ts_lstm_eval",
+      "model": "LSTM_seq",
+      "valid_auc": 0.59481806385584,
+      "gap": 0.12279978831263505,
+      "test_auc": 0.6088733462131031,
+      "improvement": -0.29365395961188834,
+      "adopted": false
+    },
+    {
+      "stage": "stacking_reduced",
+      "model": "Stack(LR,XGB,MLP)",
+      "valid_auc": 0.9018641889466676,
+      "gap": 0.04255830211237566,
+      "improvement": 0.013392165478939289,
+      "adopted": false
+    }
+  ]
+}
