@@ -2,7 +2,8 @@
 name = "ml-proyecto-weatheraus"
 version = "0.1.0"
 description = "Proyecto ML para predicción de lluvia en Australia"
-authors = [ { name = "Autor", email = "email@example.com" } ]
+authors = [ { name = "Federico Gómez", email = "fjgomezc@eafit.edu.co" } ]
+license = {text = "GPL-3.0"}
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
